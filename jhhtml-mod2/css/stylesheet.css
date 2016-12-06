@@ -3,55 +3,71 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
 
-}
 h1 {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   text-align: center;
+  font-size: 1.75em;
 }
+
+/* Main Container Class for each Menu Item */
 
 .container {
-  background-color: white;
-  height: 100px;
-  font-family: Helvetica;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 10px;
-  padding-top: 0; 
-  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 10px; 
   position: relative;
   overflow: hidden;
 
 }
 
-.label-text{
-  background-color: green;
-  border: 1px solid black;
-  color: Black;
-  position: absolute;
-  top:0;
-  left:70%;
-  width:30%;
-  text-align: center;
-  margin-top: =0;
-}
-
+/* Main text class for the contents of the Container */
 .p1 {
   background-color: #A52A2A;
   border: 1px solid black;
   padding: 10px;
   width: 90%;
+  height: 150px;
   margin-right: auto;
   margin-left: auto;
-  font-family: Helvetica;
   color: white;
   position: relative;
   text-overflow: clip;
 
 }
 
+/* Right top label for for each Container */
+.label-text{
+  border: 1px solid black;
+  position: absolute;
+  top:0;
+  left:70%;
+  width:30%;
+  text-align: center;
+  margin-top: =0;
+  font-size: 1.25em;
+}
+
+/* ID Label colors */
+#Beef {
+    background-color: #FFDAB9;
+    color: #000000;
+}
+
+#Sushi {
+    background-color: #008000;
+    color: #FFFFFF;
+}
+
+#Chicken{
+    background-color: #87CEFA;
+    color: #000000;
+}
 
 /* Simple Responsive Framework. */
 .row {
@@ -62,7 +78,8 @@ h1 {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, 
+  .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   }
   .col-lg-1 {
     width: 8.33%;
@@ -104,7 +121,8 @@ h1 {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
+  .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   }
   .col-md-1 {
     width: 8.33%;
@@ -142,9 +160,17 @@ h1 {
   .col-md-12 {
     width: 100%;
   }
-  .row2{
+
+/* Special case for medium screen to stretch last row */
+  .row2 {
     margin-left: -30px;
-    width: 106%;
+    width: 105.5%;
+  }
+
+  .label2 {
+    left:85%;
+    width:15%;
+ 
   }
 }
 
