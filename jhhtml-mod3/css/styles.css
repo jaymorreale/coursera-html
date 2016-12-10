@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+.navbar{
+		background-color: #87CEFA;
+}
+
+.navbar-collapse {
+	.border-top: 0;
+}
+.navbar-header>.navbar-brand {
+	font-size: 2em;
+	font-weight: bold; 
+	color: black;
+}
+
+.nav-item {
+	border: 1px solid #000000;
+	font-weight: bold;
+}
+
+/* For the menu item margins*/
+#nav-list {
+	margin-top: 0px;
+	margin-bottom:0;
+	background-color: #B0C4DE;
+}
+
+/* For the text of the menu items*/
+#nav-list a span{
+	font-size: 1.25em;
+}
+
+#menu-section {
+	margin: 25px;
+}
+
+h4 {
+	margin: 25px;
+}
+
+.content-box 	{
+	background-color: #989898;
+	margin: 15px;
+	border: 1px solid black;
+}
+
+p {
+	padding: 10px;
+}
