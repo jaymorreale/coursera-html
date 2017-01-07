@@ -40,24 +40,6 @@ function NarrowItDownController(MenuCategoriesService) {
       if(list.found.length == 0)
         list.error = true;
     })
-    // list = promise.data.found;
-    // if(list.found.length == 0)
-    //   list.error = true;
-
-    // promise.then(function (response) {
-    //   list.found = [];
-    //   var menuItems = response.data.menu_items;
-    //
-    //   for( var i = 0; i < menuItems.length; i++)
-    //     if(menuItems[i].description.indexOf(list.searchTerm) != -1)
-    //       list.found.push(menuItems[i]);
-    //
-    //   if(list.found.length == 0)
-    //     list.error = true;
-    // })
-    // .catch(function (error) {
-    //   console.log(error);
-    // })
   };
 
   list.onRemove = function (itemIndex) {
@@ -84,7 +66,7 @@ function MenuSearchService($http, ApiBasePath) {
     })
     .catch(function (error) {
       console.log(error);
-    }) ;
+    });
   };
 }
 
