@@ -1,0 +1,16 @@
+<!-- <h3>Menu Items </h3> -->
+<!-- <ul>
+  <li ng-repeat="item in $ctrl.items">
+    {{ item.name }}
+  </li>
+</ul> -->
+<table>
+  <tr>
+    <th> Menu Item </th>
+    <th> Description </th>
+  </tr>
+  <tr ng-repeat="item in $ctrl.items">
+    <td> {{ item.name }} </td>
+    <td> {{ item.description }} </td>
+  </tr>
+</table>

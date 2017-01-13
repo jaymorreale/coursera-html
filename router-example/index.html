@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='App'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Routing Example</title>
+  </head>
+  <body>
+    <h1>Welcome to Routing Example</h1>
+
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/app/app.module.js"></script>
+    <script src="src/data/data.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'App' module artifacts -->
+    <script src="src/app/itemslist.component.js"></script>
+    <script src="src/app/itemslist.controller.js"></script> 
+    <script src="src/app/categories.component.js"></script>
+    <script src="src/app/categories.controller.js"></script>
+    <script src="src/data/data.service.js"></script>
+
+  </body>
+</html>

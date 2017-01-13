@@ -1,0 +1,7 @@
+<h3>Please Select a Category </h3>
+<ul>
+  <li ng-repeat="item in $ctrl.items"
+    ui-sref="items({shortName: item.short_name, cat:item.name})">
+    {{ item.name }}
+  </li>
+</ul>
